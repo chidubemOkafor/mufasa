@@ -59,6 +59,7 @@ function play() {
             pipe_sprite_props.right + move_speed >= bear_props.left &&
             element.increase_score == "1"
           ) {
+            score_val, (innerHTML) => score_val.innerHTML + 1;
           }
         }
       }
