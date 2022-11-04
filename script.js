@@ -89,7 +89,7 @@ function play() {
     if (game_state != "Play") return;
     bear_dy = bear_dy + grativy;
     document.addEventListener("click", () => {
-      bear_dy = -7.6;
+      bear_dy = -8;
       if (bear_dy > 0) {
         img.src = "assets/Bear2.png";
         img.src = "assets/Bear1.png";
