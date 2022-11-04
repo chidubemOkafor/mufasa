@@ -7,8 +7,8 @@
 
 .background {
   height: 100vh;
-  width: 100vh;
-  background: url() no-repeat center center fixed;
+  width: 100%;
+  background: url("assets/background-img.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -moz-background-size: cover;
@@ -29,9 +29,27 @@
   top: 40vh;
   left: 100vh;
   height: 70vh;
-  width: 6vh;
-  background: redial-gradient(lightgreen 50%, green);
+  width: 20vh;
+  background-color: rgb(95, 250, 95);
   border: 5px solid black;
+}
+#title {
+  position: absolute;
+  color: rgb(0, 150, 219);
+  font-size: 100px;
+  top: 10%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+#handle {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .message {
@@ -77,13 +95,22 @@
     white-space: nowrap;
   }
 
+  #handle {
+    font-size: 20px;
+    top: 90%;
+  }
+
+  #title {
+    font-size: 60px;
+    top: 20%;
+  }
   .score {
     font-size: 8vh;
   }
 
-  .bear {
-    width: 120px;
-    height: 50px;
+  .bear1 {
+    width: 90px;
+    height: 90px;
   }
 
   .pipe_sprite {
