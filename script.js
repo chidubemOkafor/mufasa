@@ -22,8 +22,8 @@ let game_state = "Start";
 img.style.display = "none";
 message.classList.add("messageStyle");
 
-document.addEventListener("keydown", (e) => {
-  if (e.key == "Enter" && game_state != "Play") {
+document.addEventListener("click", (e) => {
+  if (game_state != "Play") {
     document.querySelectorAll(".pipe_sprite").forEach((e) => {
       e.remove();
     });
@@ -60,6 +60,7 @@ function play() {
           bear_props.top + bear_props.height > pipe_sprite_props.top
         ) {
           game_state = "End";
+          music.pause();
           message.innerHTML =
             "Bruh! you died".fontcolor("red") +
             "<br>Press Enter To Restart Bruh!";
