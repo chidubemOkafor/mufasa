@@ -16,6 +16,7 @@ let score_val = document.querySelector(".score_val");
 let title = document.getElementById("title");
 let handle = document.getElementById("handle");
 let message = document.querySelector(".message");
+let main_message = document.querySelector(".main_message");
 let score_title = document.querySelector(".score_title");
 
 let game_state = "Start";
@@ -30,7 +31,7 @@ document.addEventListener("click", (e) => {
     img.style.display = "block";
     bear.style.top = "40vh";
     game_state = "Play";
-    message.innerHTML = "";
+    main_message.innerHTML = "";
     title.innerHTML = "";
     handle.innerHTML = "";
     score_title.innerHTML = "Score : ";

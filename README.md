@@ -1,2 +1,2 @@
-# bruhbird
- game for bruh bears whitelist
+# mufas
+ game for mufasa whitelist

@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Architects Daughter", cursive;
 }
 
 .background {
   height: 100vh;
   width: 100%;
-  background: url("assets/background-img.png") no-repeat center center fixed;
+  background: url("assets/savana.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -moz-background-size: cover;
@@ -16,9 +16,13 @@
 }
 
 .bear1 {
+  background-image: url("assets/lionwithflame.png");
   height: 100px;
-  width: 130px;
+  width: 80px;
   position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 40vh;
   left: 30vw;
   z-index: 100;
@@ -30,12 +34,11 @@
   left: 100vh;
   height: 70vh;
   width: 20vh;
-  background-color: rgb(95, 250, 95);
-  border: 5px solid black;
+  background-image: url("assets/rocks-stones.png");
 }
 #title {
   position: absolute;
-  color: rgb(0, 150, 219);
+  color: orange;
   font-size: 100px;
   top: 10%;
   left: 50%;
@@ -56,14 +59,21 @@
   position: absolute;
   z-index: 10;
   color: black;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 130px;
+  width: 200px;
   text-align: center;
+  background-image: url("assets/menu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .messageStyle {
-  background: white;
+  font-weight: 400;
+  font-style: normal;
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5%;
@@ -101,7 +111,8 @@
   }
 
   #title {
-    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
     top: 20%;
   }
   .score {
