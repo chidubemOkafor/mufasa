@@ -2,8 +2,7 @@ let move_speed = 3,
   grativy = 0.5;
 let bear = document.querySelector(".bear1");
 let img = document.getElementById("bear1");
-let bruhsound = new Audio("assets/bruh.mp3");
-let music = new Audio("assets/POL-two-fat-gangsters-short.mp3");
+let music = new Audio("assets/09 - King Of Pride Rock.mp3");
 music.loop = true;
 
 // getting bear element properties
@@ -94,12 +93,6 @@ function play() {
       if (bear_dy > 0) {
         img.src = "assets/Bear2.png";
         img.src = "assets/Bear1.png";
-      }
-    });
-
-    document.addEventListener("click", () => {
-      if (bear_dy < 0) {
-        bruhsound.play();
       }
     });
 
