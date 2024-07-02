@@ -36,7 +36,6 @@ document.addEventListener("click", (e) => {
     score_title.innerHTML = "Score : ";
     score_val.innerHTML = "0";
     message.classList.remove("messageStyle");
-    music.play();
     play();
   }
 });
@@ -44,7 +43,7 @@ document.addEventListener("click", (e) => {
 function play() {
   function move() {
     if (game_state != "Play") return;
-
+    music.play();
     let pipe_sprite = document.querySelectorAll(".pipe_sprite");
     pipe_sprite.forEach((element) => {
       let pipe_sprite_props = element.getBoundingClientRect();
